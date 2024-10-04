@@ -1,0 +1,7 @@
+<div *ngIf="car">
+    <h2>{{ car.name }}</h2>
+    <img [src]="car.imageUrl" alt="{{ car.name }}" width="300">
+    <p>Harga: {{ car.price | currency }}</p>
+    <button>Sewa Mobil</button>
+  </div>
+  

@@ -1,13 +1,31 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'belajar_angular';
+  title = 'belajar-angular';
+
+  cars = [
+    {
+      name: 'Toyota Avanza',
+      description: 'Toyota Avanza',
+      price: 300000,
+      imageUrl: '\assets\images\avanza.png' // Sesuaikan dengan path gambar Anda
+    },
+    {
+      name: 'Honda Jazz',
+      description: 'Honda Jazz',
+      price: 350000,
+      imageUrl: '\src\assets\images\jazz.jpg'
+    },
+    {
+      name: 'Suzuki Ertiga',
+      description: 'Suzuki Ertiga',
+      price: 400000,
+      imageUrl: '\assets\images\ertiga.png'
+    }
+  ];
 }

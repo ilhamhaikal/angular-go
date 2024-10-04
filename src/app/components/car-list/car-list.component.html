@@ -1,0 +1,7 @@
+<h2>Daftar Mobil</h2>
+<div *ngFor="let car of cars">
+  <h3>{{ car.name }}</h3>
+  <img [src]="car.imageUrl" alt="{{ car.name }}" width="150">
+  <p>Harga: {{ car.price | currency }}</p>
+  <a [routerLink]="['/car', car.id]">Sewa Mobil</a>
+</div>
